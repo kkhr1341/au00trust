@@ -938,7 +938,6 @@ body{
 .tel .a {
   line-height: 1em;
   font-weight: bold;
-  align-self: end;
   text-decoration: underline solid #00238c;
   text-align: center;
 }
@@ -994,7 +993,7 @@ body{
 }
 
 .fz-15 {
-  font-size: 1.5rem;
+  font-size: 10px;
 }
 
 .fz-20 {
