@@ -887,10 +887,20 @@ body{
   color: #fff;
 }
 
-.top-logo img {
-  background-color: #5fa8;
-  border-radius: 20px;
+.top-logo .img {
+  background-color: #daeae288;
+  border-radius: 40%;
+  height: 80%;
+  position: relative;
 }
+
+.top-logo img {
+  width: 70%;
+  margin: auto;
+  position: absolute;
+  left: 0; right: 0; top: 0; bottom: 0;
+}
+
 
 .tel {
   color: #00238c;
@@ -938,7 +948,7 @@ body{
   height: max-content;
   padding: 1.5rem 0;
   max-width: 1440px;
-  width: 100%;
+  width: 95%;
   display: grid;
   grid-template-columns: repeat(4, auto);
 }
@@ -1270,9 +1280,10 @@ button > span:first-child {
 .top-logo img {
   background-color: initial;
   border-radius: initial;
+  width: 100%;
 }
 
-picture {
+.top-logo .img {
   background-color: initial;
 }
   .sec01-tel {
@@ -1292,6 +1303,7 @@ picture {
 
 .header-frame {
   grid-template-columns: repeat(2, auto);
+  width: 100%;
 }
 
 .sec04-cont-03-list > div p {
