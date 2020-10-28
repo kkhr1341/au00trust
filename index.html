@@ -445,18 +445,17 @@
             name="contact" method="post">
             <div class="property">
               <h3 class="fz-25">物件情報入力</h3>
-              <label class="ftl" for="物件の種類"><span>物件の種類</span><span class="form-grey">任意</span></label>
+              <div class="ftl"><span>物件の種類</span><span class="form-grey">任意</span></div>
               <div class="fdl" onclick="chal(event);">
                 <label class="dh"><input type="checkbox" name="物件の種類" value="戸建">戸建</label>
                 <label class="mh"><input type="checkbox" name="物件の種類" value="マンション">マンション</label>
               </div>
-              <label class="ftl" for="都道府県（物件所在地）"><span>都道府県（物件所在地）</span><span class="form-red">必須</span></label>
-              <label class="fdl">
+              <div class="ftl"><span>都道府県（物件所在地）</span><span class="form-red">必須</span></div>
+              <div class="fdl">
                 <select name="都道府県（物件所在地）" data-formrun-type="prefecture-jp" data-formrun-required></select>
                 <div data-formrun-show-if-error="都道府県（物件所在地）">都道府県（物件所在地）を入力してください</div>
-              </label>
-              <label class="ftl" for="いつ頃にお取引したいとお考えですか？"><span>いつ頃にお取引したいとお考えですか？</span><span
-                  class="form-red">必須</span></label>
+              </div>
+              <div class="ftl"><span>いつ頃にお取引したいとお考えですか？</span><span class="form-red">必須</span></div>
               <div class="fdl">
                 <select name="いつ頃にお取引したいとお考えですか？" data-formrun-required>
                   <option value="" selected>時期を選択してください</option>
@@ -467,19 +466,19 @@
                 </select>
                 <div data-formrun-show-if-error="いつ頃にお取引したいとお考えですか？">お取引の時期を選択してください</div>
               </div>
-              <label class="ftl" for="お問い合わせ内容"><span>お問い合わせ内容</span><span class="form-grey">任意</span></label>
+              <div class="ftl"><span>お問い合わせ内容</span><span class="form-grey">任意</span></div>
               <div class="fdl"><textarea cols="30" rows="10" name="お問い合わせ内容" placeholder="リースバックについて知りたい"></textarea>
               </div>
             </div>
             <div class="personal">
               <h3 class="fz-25">個人情報入力</h3>
-              <label class="ftl" for="お名前"><span>お名前</span><span class="form-grey">任意</span></label>
+              <div class="ftl"><span>お名前</span><span class="form-grey">任意</span></div>
               <div class="fdl"><input type="text" name="お名前" placeholder="戸建太郎"></div>
-              <label class="ftl" for="電話番号"><span>電話番号</span><span class="form-red">必須</span></label>
+              <div class="ftl"><span>電話番号</span><span class="form-red">必須</span></div>
               <div class="fdl"><input type="number" name="電話番号" placeholder="09012345678" data-formrun-required>
                 <div data-formrun-show-if-error="電話番号">電話番号を入力してください</div>
               </div>
-              <label class="ftl" for="メールアドレス"><span>メールアドレス</span><span class="form-grey">任意</span></label>
+              <div class="ftl"><span>メールアドレス</span><span class="form-grey">任意</span></div>
               <div class="fdl"><input type="email" name="メールアドレス" data-formrun-type="email" placeholder="@.co.jp"></div>
             </div>
             <div class="_formrun_gotcha">
