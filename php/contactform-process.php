@@ -25,7 +25,7 @@ if (empty($_POST["message"])) {
     $message = $_POST["message"];
 }
 
-$EmailTo = "info＠au-trust.co.jp";
+$EmailTo = "hrskkmt@xs615223.xsrv.jp";
 // $EmailTo = "cs8.cs8080.cscs8@gmail.com";
 $Subject = "問い合わせがAUトラスト企業ページからきました";
 
@@ -45,7 +45,7 @@ $Body .= $message;
 $Body .= "\n";
 
 // send email
-$success = mail($EmailTo, $Subject, $Body, "From:".$email);
+$success = mb_send_mail($EmailTo, $Subject, $Body, "From:".$email);
 // redirect to success page
 if ($success && $errorMSG == ""){
    echo "success";
