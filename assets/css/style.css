@@ -1074,7 +1074,7 @@ select {
   padding-left: 5rem;
 }
 
-dl span:last-child{
+.property span:last-child,.personal span:last-child{
   margin-left: 10%;
   border-radius:3px;
   padding: 1px 5px;
@@ -1090,11 +1090,11 @@ dl span:last-child{
   color: #000;
 }
 
-dt {
+.ftl {
   font-weight: bold;
 }
 
-dd {
+.fdl {
   color: #000;
 }
 

@@ -101,7 +101,7 @@
       </div>
       <div class="sec02-cont-03">
         <h2>
-          <img class="middle_logo a" src="img/icon.svg">
+          <img class="middle_logo a" src="img/icon.svg" alt="autrustロゴ">
 
           <span class="b fz-30">家リース 買戻セール</span>
           <span class="c fz-20">リースバック専門の中立公正なFP</span><span class="d fz-40">が</span>
@@ -443,20 +443,20 @@
           <h2 class="fz-30"><span>簡単1分で完了</span><span>あなたの不動産、売ったらいくら？</span></h2>
           <form class="formrun" action="https://form.run/api/v1/r/twy16w0y504kzxcc5x31q0m6" id="contactform"
             name="contact" method="post">
-            <dl class="property">
+            <div class="property">
               <h3 class="fz-25">物件情報入力</h3>
-              <dt><span>物件の種類</span><span class="form-grey">任意</span></dt>
-              <dd onclick="chal(event);">
+              <label class="ftl" for="物件の種類"><span>物件の種類</span><span class="form-grey">任意</span></label>
+              <div class="fdl" onclick="chal(event);">
                 <label class="dh"><input type="checkbox" name="物件の種類" value="戸建">戸建</label>
                 <label class="mh"><input type="checkbox" name="物件の種類" value="マンション">マンション</label>
-              </dd>
-              <dt><span>都道府県（物件所在地）</span><span class="form-red">必須</span></dt>
-              <dd>
+              </div>
+              <label class="ftl" for="都道府県（物件所在地）"><span>都道府県（物件所在地）</span><span class="form-red">必須</span></label>
+              <div class="fdl">
                 <select name="都道府県（物件所在地）" data-formrun-type="prefecture-jp" data-formrun-required></select>
                 <div data-formrun-show-if-error="都道府県（物件所在地）">都道府県（物件所在地）を入力してください</div>
-              </dd>
-              <dt><span>いつ頃にお取引したいとお考えですか？</span><span class="form-red">必須</span></dt>
-              <dd>
+              </div>
+              <label class="ftl"><span>いつ頃にお取引したいとお考えですか？</span><span class="form-red">必須</span></label>
+              <div class="fdl">
                 <select name="いつ頃にお取引したいとお考えですか？" data-formrun-required>
                   <option value="" selected>時期を選択してください</option>
                   <option value="すぐにでも">すぐにでも</option>
@@ -465,21 +465,22 @@
                   <option value="まだ売却時期は決まっていない">まだ売却時期は決まっていない</option>
                 </select>
                 <div data-formrun-show-if-error="いつ頃にお取引したいとお考えですか？">お取引の時期を選択してください</div>
-              </dd>
-              <dt><span>お問い合わせ内容</span><span class="form-grey">任意</span></dt>
-              <dd><textarea cols="30" rows="10" name="お問い合わせ内容" placeholder="リースバックについて知りたい"></textarea></dd>
-            </dl>
-            <dl class="personal">
+              </div>
+              <label class="ftl"><span>お問い合わせ内容</span><span class="form-grey">任意</span></label>
+              <div class="fdl"><textarea cols="30" rows="10" name="お問い合わせ内容" placeholder="リースバックについて知りたい"></textarea>
+              </div>
+            </div>
+            <div class="personal">
               <h3 class="fz-25">個人情報入力</h3>
-              <dt><span>お名前</span><span class="form-grey">任意</span></dt>
-              <dd><input type="text" name="お名前" placeholder="戸建太郎"></dd>
-              <dt><span>電話番号</span><span class="form-red">必須</span></dt>
-              <dd><input type="number" name="電話番号" placeholder="09012345678" data-formrun-required>
+              <label class="ftl"><span>お名前</span><span class="form-grey">任意</span></label>
+              <div class="fdl"><input type="text" name="お名前" placeholder="戸建太郎"></div>
+              <label class="ftl"><span>電話番号</span><span class="form-red">必須</span></label>
+              <div class="fdl"><input type="number" name="電話番号" placeholder="09012345678" data-formrun-required>
                 <div data-formrun-show-if-error="電話番号">電話番号を入力してください</div>
-              </dd>
-              <dt><span>メールアドレス</span><span class="form-grey">任意</span></dt>
-              <dd><input type="email" name="メールアドレス" data-formrun-type="email" placeholder="@.co.jp"></dd>
-            </dl>
+              </div class="fdl">
+              <label class="ftl"><span>メールアドレス</span><span class="form-grey">任意</span></label>
+              <div class="fdl"><input type="email" name="メールアドレス" data-formrun-type="email" placeholder="@.co.jp"></div>
+            </div>
             <div class="_formrun_gotcha">
               <style media="screen">
                 ._formrun_gotcha {
