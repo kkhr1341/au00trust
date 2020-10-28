@@ -506,23 +506,13 @@
       </div>
     </section>
   </main>
-  <!-- <footer>
-    <nav>
-      <ul>
-        <li>運営会社</li>
-        <li>プライバシーポリシー</li>
-      </ul>
-    </nav>
+  <footer class="footer">
     <div>
-      <small>コピーライト</small>
+      <a href="https://au-trust.co.jp">運営会社　AUトラスト</a>
+
+      <div class="f-copy"><small>© 2020 au-trust All Rights Reserved.</small></div>
     </div>
   </footer>
-  <div>
-    <a href="">
-      下部追従
-      お問い合わせはこちら
-    </a>
-  </div> -->
   <div class="theme-color-02 sec02-cont-02 footbar" id="foot">
     <div>
       <a href="#contact" class="fz-15">
@@ -537,14 +527,20 @@
       const winh = window.innerHeight;
       const bottom = doch - winh;//ページ全体の高さ - ウィンドウの高さ = ページの最下部位置
       const auh = window.scrollY;
+      const adr = document.getElementById('foot');
       if (bottom * 0.95 >= window.scrollY) {
-        document.getElementById('foot').classList.remove('hide');
+        adr.setAttribute('style', 'display:block;');
+        adr.classList.remove('hide');
       } else {
-        document.getElementById('foot').classList.add('hide');
+        adr.classList.add('hide');
+        setTimeout(() => {
+          adr.setAttribute('style', 'display:none;');
+        }, 400);
       }
 
       console.log(auh)
     };
+
 
     let before = null;
     function chal(e) {

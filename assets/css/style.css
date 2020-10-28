@@ -1186,6 +1186,17 @@ button > span:first-child {
   max-width: 1440px;
   margin: auto;
 }
+footer {
+  background-color: #03103f;
+  padding-bottom: 50px;
+  color: #fff;
+}
+footer > div {
+  width: 100%;
+  max-width: 1440px;
+  text-align: center;
+  margin: auto;
+}
 @media screen and (max-width: 1439px) {
   html {
     font-size: 1.041vw;
