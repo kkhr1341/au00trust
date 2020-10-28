@@ -895,14 +895,14 @@ body{
 }
 
 .sec01 .img {
-  background-color: #fffd;
-  border-radius: 10%;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  border-radius: 9%;
   width: max-content;
-  max-width: 97%;
+  max-width: 100%;
   margin: auto;
-  margin-bottom: 0%;
-  margin-left: 0%;
-  padding: 10px;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding: 50px;
 }
 
 .top-logo img {
