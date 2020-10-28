@@ -894,6 +894,12 @@ body{
   position: relative;
 }
 
+.sec01 .img {
+  width: min-content;
+  margin: auto;
+  padding: 10px;
+}
+
 .top-logo img {
   width: 90%;
   margin: auto;
@@ -1297,6 +1303,13 @@ footer > div {
 .top-logo .img {
   background-color: initial;
 }
+
+.sec01 .img {
+  width: 350px;
+  margin: auto;
+  padding: 10px;
+}
+
   .sec01-tel {
     width: calc(192px + 30vw);
   }
