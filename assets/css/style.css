@@ -82,7 +82,7 @@ body{
 }
 
 .sec01-title-emb {
-  background-image: url("/img/title_emb.png");
+  background-image: url("img/title_emb.png");
   z-index: 2;
   background-size: contain;
   width: 18.6rem;
