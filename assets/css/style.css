@@ -895,11 +895,13 @@ body{
 }
 
 .sec01 .img {
-  background-color: #faeae2aa;
-  border-radius: 10px;
+  background-color: #fffd;
+  border-radius: 10%;
   width: max-content;
-  max-width: 100%;
+  max-width: 95%;
   margin: auto;
+  margin-bottom: 0%;
+  margin-left: 0%;
   padding: 10px;
 }
 
@@ -1212,7 +1214,7 @@ footer > div {
   }
 
   .sec01 {
-    max-width: 95%;
+    max-width: 100%;
   }
   .sec02-cont-01 {
     width: 95%;
@@ -1289,6 +1291,7 @@ footer > div {
                 "b" auto
                 "c" auto
                 "d" auto / 100%;
+  gap: 10px;
   }
 
 .tel {
