@@ -523,15 +523,16 @@
     </div>
   </div>
   <script>
-    const fadeConts = document.querySelectorAll('.footbar'); // フェードさせる要素の取得
+
+
     window.onscroll = function () {
       const doch = document.body.clientHeight;
       const winh = window.innerHeight;
       const bottom = doch - winh;//ページ全体の高さ - ウィンドウの高さ = ページの最下部位置
-      const auh = window.scrollY;
       const adr = document.getElementById('foot');
       const anmed = document.querySelector('.footbar');
-      if (bottom * 0.925 >= window.scrollY) {
+      const auh = window.scrollY;
+      if (bottom * 0.925 >= auh) {
         adr.setAttribute('style', 'display:block;');
 
         setTimeout(() => {
@@ -549,7 +550,7 @@
       }
     };
 
-    let before = null;
+    const before = null;
     function chal(e) {
 
       const tgt = e.srcElement ? e.srcElement : e.target;
