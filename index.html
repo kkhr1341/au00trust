@@ -26,6 +26,8 @@
   <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="icon" href="img/icon.svg">
+  <link rel="shortcut icon" href="img/icon.svg">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180">
   <script src="https://sdk.form.run/js/v2/formrun.js"></script>
 
 
@@ -528,15 +530,24 @@
       const bottom = doch - winh;//ページ全体の高さ - ウィンドウの高さ = ページの最下部位置
       const auh = window.scrollY;
       const adr = document.getElementById('foot');
+      const anmed = document.querySelector('.footbar');
       if (bottom * 0.925 >= window.scrollY) {
         adr.setAttribute('style', 'display:block;');
-        adr.classList.remove('hide');
+
+        setTimeout(() => {
+          if (adr.getAttribute('style') == 'display:block;') {
+            adr.classList.remove('hide');
+          };
+        }, 10);
       } else {
         adr.classList.add('hide');
-        setTimeout(() => { adr.setAttribute('style', 'display:none;'); }, 400);
+        anmed.addEventListener('transitionend', function () {
+          if (adr.classList.contains('hide')) {
+            adr.setAttribute('style', 'display:none;')
+          };
+        });
       }
     };
-
 
     let before = null;
     function chal(e) {
