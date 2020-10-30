@@ -231,7 +231,7 @@ body{
   line-height: 2em;
 }
 
-.sec02-cont-02 a {
+.sec02-cont-02 .abtn {
   display: grid;
   grid-template-columns: auto auto;
   background: linear-gradient(0deg, #009000 30%, #33ff33 100%) top center/100% auto;
@@ -274,6 +274,10 @@ body{
   padding: 1rem 3rem;
   border-radius: 2rem;
   align-items: center;
+}
+
+.sec02-tel a {
+  color: #00238c;
 }
 
 .sec02-tel .a {
@@ -855,7 +859,7 @@ body{
   padding: 1rem;
 }
 
-.sec06-tel > p:nth-child(2) {
+.sec06-tel > a {
   margin: 2rem 0;
   font-size: 6rem;
   font-weight: bold;
@@ -928,6 +932,8 @@ body{
   font-weight: bold;
   text-decoration: underline solid #00238c;
   text-align: center;
+  display: block;
+  color: #00238c;
 }
 
 .tel div {
@@ -1015,7 +1021,7 @@ body{
   display: block;
 }
 
-.footbar a {
+.footbar .abtn {
   margin: 0 auto;
 }
 
@@ -1174,7 +1180,7 @@ button > span:first-child {
   color: #10AE12;
 }
 
-.footbar a {
+.footbar .abtn {
   grid-template-columns: auto;
   font-size: 20px;
   width: 50%;
