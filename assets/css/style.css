@@ -1152,6 +1152,7 @@ button {
   display: block;
   background: linear-gradient(0deg, #009000 30%, #33ff33 100%) top center/100% auto;
   margin: 5rem auto;
+  font-size: 4rem;
   font-weight: bold;
   min-height: 59px;
   min-width: 300px;
