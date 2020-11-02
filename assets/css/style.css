@@ -58,7 +58,7 @@ body{
   display: grid;
   grid-template:"a c" auto
                 "b c" auto
-                "d c" auto / 55%;
+                "d c" auto / 56%;
 }
 
 .a {
